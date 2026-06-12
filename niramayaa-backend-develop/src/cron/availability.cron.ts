@@ -11,14 +11,14 @@ const runDoctorAvailabilityCron = async () => {
     try {
         // 1. Fetch all doctors
         const doctors = await prisma.doctor_profile.findMany({
-             select: { user_id: true }
+            select: { user_id: true }
         });
 
         console.log(`[CRON] Found ${doctors.length} doctors. Processing availability...`);
 
         // 2. Iterate and generate availability dynamically using existing function
         let processedCount = 0;
-        
+
         for (const doctor of doctors) {
             try {
                 // Remove the initial verification block inside `createDefaultAvailability` and process logic
@@ -32,10 +32,10 @@ const runDoctorAvailabilityCron = async () => {
 
                 while (daysAdded < 30) {
                     const targetDate = new Date(now.getTime() + dayOffset * 24 * 60 * 60 * 1000);
-                    
+
                     const istTime = new Date(targetDate.getTime() + (5.5 * 60 * 60 * 1000));
                     const dayOfWeek = istTime.getUTCDay(); // 0 is Sunday
-                    
+
                     const year = istTime.getUTCFullYear();
                     const month = istTime.getUTCMonth();
                     const date = istTime.getUTCDate();
@@ -45,10 +45,10 @@ const runDoctorAvailabilityCron = async () => {
                         return new Date(tempIst.getTime() - (5.5 * 60 * 60 * 1000));
                     };
 
-                    const start_at = createUtcFromIst(9, 0); 
-                    const end_at = createUtcFromIst(17, 0); 
-                    const break_start = createUtcFromIst(13, 0); 
-                    const break_end = createUtcFromIst(14, 0); 
+                    const start_at = createUtcFromIst(9, 0);
+                    const end_at = createUtcFromIst(17, 0);
+                    const break_start = createUtcFromIst(13, 0);
+                    const break_end = createUtcFromIst(14, 0);
 
                     availabilities.push({
                         doctor_id: doctor.user_id,
@@ -60,7 +60,7 @@ const runDoctorAvailabilityCron = async () => {
                         is_active: dayOfWeek !== 0,
                         queue_capacity
                     });
-                    
+
                     daysAdded++;
                     dayOffset++;
                 }
@@ -73,14 +73,14 @@ const runDoctorAvailabilityCron = async () => {
                     processedCount++;
                 }
             } catch (err) {
-                 console.error(`[CRON] Error generating availability for Doctor ID ${doctor.user_id}:`, err);
+                console.error(`[CRON] Error generating availability for Doctor ID ${doctor.user_id}:`, err);
             }
         }
 
         console.log(`[CRON] Success! Processed scheduling for ${processedCount} doctors.`);
 
     } catch (error) {
-         console.error('[CRON] High-Level Failure generating doctor availabilities:', error);
+        console.error('[CRON] High-Level Failure generating doctor availabilities:', error);
     }
 }
 

@@ -1,6 +1,7 @@
 import bcrypt from "bcrypt";
 import crypto from "crypto";
 import prisma from "../../prisma/prisma";
+import { Prisma } from "@prisma/client";
 import {
     IPatientSignupRequest,
     ILoginRequest,
@@ -126,7 +127,7 @@ export const authService = {
         }
 
         // 4. Create User and Patient Profile in Transaction
-        const newUser = await prisma.$transaction(async (tx) => {
+        const newUser = await prisma.$transaction(async (tx: Prisma.TransactionClient) => {
             const user = await tx.user.create({
                 data: {
                     email,
@@ -434,7 +435,7 @@ export const authService = {
 
         const password_hash = await bcrypt.hash(password, 10);
 
-        await prisma.$transaction(async (tx) => {
+        await prisma.$transaction(async (tx: Prisma.TransactionClient) => {
             // Update password
             await tx.user.update({
                 where: { id: tokenRecord.user_id },
@@ -546,3 +547,4 @@ export const authService = {
         await sessionService.invalidateSession(userId, refreshToken);
     }
 };
+
