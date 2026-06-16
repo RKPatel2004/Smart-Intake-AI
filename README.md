@@ -633,3 +633,35 @@ Receive:
 ![Booking Confirmation Page](images/Booking%20Confirmation%20page.png)
 
 **Description:** Confirmation screen shown immediately after successful appointment booking and payment.
+
+---
+
+## 6.30 QR Code for ELITE Doctor
+
+![QR Code for ELITE Doctor](images/QR%20code%20for%20ELITE%20doctor.png)
+
+**Description:** QR code generated for an Elite Plan doctor and displayed in the doctor's profile section. Patients can scan this QR code to directly access the doctor's appointment booking page for walk-in consultations.
+
+---
+
+## 6.31 Queue Status and Appointment Form for Guest Patient
+
+![Queue Status and Appointment Form for Guest Patient](images/Queue%20status%20and%20appointment%20form%20for%20Guest%20patient.png)
+
+**Description:** Appointment booking form for guest patients accessed through QR code scanning. The page allows patients to enter their details, view the current queue status, and book a consultation without creating an account.
+
+---
+
+## 6.32 Queue Token Assignment and Queue Status
+
+![Queue Token Assignment and Queue Status](images/Queue%20Token%20Assignment%20and%20Queue%20status.png)
+
+**Description:** Displays the assigned queue token number and real-time queue status for guest patients after successful appointment booking through the QR-based walk-in system.
+
+---
+
+## 6.33 Ongoing Appointment on Doctor Side with Timer
+
+![Ongoing Appointment on Doctor Side with Timer](images/Ongoing%20Appointment%20on%20Doctor%20side%20with%20Timer.png)
+
+**Description:** Doctor-side interface displaying an ongoing patient appointment along with a live consultation timer, helping doctors monitor appointment duration and manage patient flow efficiently.
