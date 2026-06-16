@@ -399,3 +399,237 @@ Receive:
 **Technology:** LLM (OpenRouter)
 
 **Description:** Extraction of structured patient information from conversations.
+
+---
+
+# 6. Project Screenshots
+
+## 6.1 Landing Page
+
+![Landing Page](images/Landing%20Page.png)
+
+**Description:** Landing page displaying the system introduction with primary navigation options through **Sign In** and **Get Started** buttons for user access and onboarding.
+
+---
+
+## 6.2 Login Page
+
+![Login Page](images/Login%20Page.png)
+
+**Description:** The primary interface for users to sign into their registered accounts.
+
+---
+
+## 6.3 Role Selection Page
+
+![Role Selection Page](images/Role%20Selection%20Page.png)
+
+**Description:** Screen prompting the user to select either the **Patient** or **Doctor** role before registration.
+
+---
+
+## 6.4 Patient Registration Page
+
+![Patient Registration Page](images/Patient%20Registration%20Page.png)
+
+**Description:** The form used for new patients to enter personal and demographic information.
+
+---
+
+## 6.5 Plan Selection Page for Doctors
+
+![Plan Selection Page for Doctors](images/Plan%20selection%20Page%20for%20doctors.png)
+
+**Description:** Doctor's onboarding screen for selecting the Elite (QR-based) or Pro (slot-based) subscription plan.
+
+---
+
+## 6.6 Doctor Registration Page
+
+![Doctor Registration Page](images/Doctor%20Registration%20Page.png)
+
+**Description:** Form for doctors to enter professional credentials, qualifications, and specialties during signup.
+
+---
+
+## 6.7 Doctor Analytics Dashboard
+
+![Doctor Analytics Dashboard](images/Doctor%20Analytics%20Dashboard.png)
+
+**Description:** The doctor's main panel showing key practice metrics, appointments, and overall performance analytics.
+
+---
+
+## 6.8 Appointments Page on Doctor Side
+
+![Appointments Page on Doctor Side](images/Appointments%20Page%20on%20Doctor%20Side.png)
+
+**Description:** Interface for doctors to view and manage all appointments in Ongoing, Scheduled, and History tabs.
+
+---
+
+## 6.9 Doctor Availability Calendar Page
+
+![Doctor Availability Calendar Page](images/Doctor%20Availability%20Calendar%20Page.png)
+
+**Description:** Calendar view for doctors to check and update their consultation schedules and slot availability.
+
+---
+
+## 6.10 Doctor Availability Updation Page
+
+![Doctor Availability Updation Page](images/Doctor%20Availability%20Updation%20Page.png)
+
+**Description:** Form for setting specific working hours, break times, and slot duration for selected dates.
+
+---
+
+## 6.11 Doctor Details
+
+![Doctor Details](images/Doctor%20Details.png)
+
+**Description:** Modal displaying the comprehensive details of a selected doctor, including ratings and experience.
+
+---
+
+## 6.12 Doctor Listing Page on Patient Side
+
+![Doctor Listing Page on Patient Side](images/Doctor%20Listing%20Page%20on%20Patient%20Side.png)
+
+**Description:** Patient interface for searching, filtering, and browsing available doctors by specialty, location, and other filters.
+
+---
+
+## 6.13 Doctor Profile Page
+
+![Doctor Profile Page](images/Doctor%20Profile%20Page.png)
+
+**Description:** Read-only view of the doctor's professional profile, including bio, qualifications, and consultation fee.
+
+---
+
+## 6.14 Edit Medical Report
+
+![Edit Medical Report](images/Edit%20Medical%20Report.png)
+
+**Description:** Interface for a patient to modify, upload, or remove medical reports associated with an upcoming appointment.
+
+---
+
+## 6.15 Landing Page
+
+![Landing Page](images/Landing%20Page.png)
+
+**Description:** Main landing interface of the Niramaya Healthcare Appointment Booking System.
+
+---
+
+## 6.16 Login Page
+
+![Login Page](images/Login%20Page.png)
+
+**Description:** User authentication page for secure access to the platform.
+
+---
+
+## 6.17 Patient Details
+
+![Patient Details](images/Patient%20Details.png)
+
+**Description:** Doctor-side modal view of patient history, including AI-generated summaries of medical reports.
+
+---
+
+## 6.18 Patient Profile
+
+![Patient Profile](images/Patient%20Profile.png)
+
+**Description:** Patient profile management screen showing personal information and medical history.
+
+---
+
+## 6.19 Payment Page
+
+![Payment Page](images/Payment%20Page.png)
+
+**Description:** Secure Stripe-integrated payment interface for consultation fee processing.
+
+---
+
+## 6.20 Payment Receipt
+
+![Payment Receipt](images/Payment%20Receipt.png)
+
+**Description:** Digital receipt summarizing transaction details and payment confirmation.
+
+---
+
+## 6.21 Pending Payment Tab
+
+![Pending Payment Tab](images/Pending%20Payment%20Tab.png)
+
+**Description:** Displays appointments awaiting payment completion.
+
+---
+
+## 6.22 Prescription Issue Page
+
+![Prescription Issue Page](images/Prescription%20Issue%20Page.png)
+
+**Description:** Interface allowing doctors to generate digital prescriptions with medication instructions.
+
+---
+
+## 6.23 Report Upload
+
+![Report Upload](images/Report%20Upload.png)
+
+**Description:** Upload interface for attaching medical reports before appointment confirmation.
+
+---
+
+## 6.24 Scheduled Appointment Tab
+
+![Scheduled Appointment Tab](images/Scheduled%20Appointment%20Tab.png)
+
+**Description:** View of all confirmed upcoming appointments with status tracking.
+
+---
+
+## 6.25 Update Patient Profile Page
+
+![Update Patient Profile Page](images/Update%20Patient%20Profile%20Page.png)
+
+**Description:** Editable profile page for updating patient contact details, vitals, and emergency information.
+
+---
+
+## 6.26 Appointment Booking Through Chatbot
+
+![Appointment Booking Through Chatbot](images/Appointment%20booking%20through%20chatbot.png)
+
+**Description:** AI-powered conversational interface that collects symptoms and patient details for appointment booking.
+
+---
+
+## 6.27 Availability Slots of Selected Doctor
+
+![Availability Slots of Selected Doctor](images/Availability%20slots%20of%20selected%20Doctor.png)
+
+**Description:** Displays available consultation slots for the selected doctor on a chosen date.
+
+---
+
+## 6.28 Chat Bot and Voice Call Selection
+
+![Chat Bot and Voice Call Selection](images/Chat%20Bot%20and%20Voice%20Call%20selection.png)
+
+**Description:** Allows patients to choose between chatbot-assisted booking and voice AI-assisted booking.
+
+---
+
+## 6.29 Booking Confirmation Page
+
+![Booking Confirmation Page](images/Booking%20Confirmation%20page.png)
+
+**Description:** Confirmation screen shown immediately after successful appointment booking and payment.
